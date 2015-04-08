@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rodrigueztomas.com.hookembeta.HookemFragment"
+    android:background="@color/orange">
+
+    <ListView
+        android:id="@+id/friends"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/plus"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+
+        >
+
+        </ListView>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#00ACB2"
+        android:text="@string/plus"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/logout"
+        />
+
+    <EditText
+        android:id="@+id/addFriend"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#00ACB2"
+        android:hint="TYPE USERNAME"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/logout"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@color/orange"
+        android:text="Logout"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
